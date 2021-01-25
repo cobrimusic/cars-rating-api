@@ -54,7 +54,6 @@
 		"postbuild:dev": "pm2 start ecosystem.config.json && pm2 log",
 		"prebuild": "rm -rf build",
 		"build": "tsc",
-		"postbuild": "pm2 start ecosystem.config.json && pm2 log",
 		"stop": "pm2 delete all"
 	}
 }
