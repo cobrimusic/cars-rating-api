@@ -48,12 +48,13 @@
 		"typescript": "^3.3.3333"
 	},
 	"scripts": {
-		"dev": "pm2 start ./node_modules/sucrase/bin/sucrase-node --name cars-rating-api -- ./src/server.ts --watch --color=true && pm2 log",
+		"dev": "pm2 start ./node_modules/sucrase/bin/sucrase-node --name node-crudapi-dev -- ./src/server.ts --watch --color=true && pm2 log",
 		"prebuild:dev": "rm -rf build",
 		"build:dev": "tsc",
 		"postbuild:dev": "pm2 start ecosystem.config.json && pm2 log",
-		"prebuild": "rm -rf build",
-		"build": "tsc",
+		"prebuild": "sudo  rm -rf build",
+		"build": "sudo tsc",
+		"postbuild": "sudo pm2 start ecosystem.config.json && sudo pm2 log",
 		"stop": "pm2 delete all"
 	}
 }
