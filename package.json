@@ -1,6 +1,9 @@
 {
 	"name": "cars-rating-api",
 	"version": "1.0.0",
+	"engines": {
+		"node": "14.8.0"
+	},
 	"description": "",
 	"main": "build/src/server.js",
 	"types": "build/src/server.d.ts",
