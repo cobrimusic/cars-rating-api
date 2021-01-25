@@ -27,8 +27,6 @@ const defaultConfig = {
 	timezone: "-03:00"
 };
 
-/* UNCOMMENT THIS BLOCK CODE TO IMPLEMENTS MIGRATIONS and SEEDS */
-// /*
 const storageConfig = {
 	migrationStorage: "json",
 	migrationStoragePath: "./database/migration-metadata.json",
@@ -39,10 +37,3 @@ const storageConfig = {
 module.exports = {
 	[env]: { ...defaultConfig, ...storageConfig }
 };
-// */
-
-/* REMOVE THIS CODE TO IMPLEMENTS MIGRATIONS and SEEDS */
-// exports.config = {
-//   [env]: defaultConfig
-// };
-
